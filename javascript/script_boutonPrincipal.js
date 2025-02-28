@@ -4,7 +4,7 @@ function affiche() {
     let div_affichage = document.getElementById("principal")
     let bouton = document.getElementById("affiche_principal");
     bouton.style.display = "none";
-    div_affichage.style.backgroundImage =  "url('../images/julie.jpg')";
+    div_affichage.style.backgroundImage =  "url('../images/julie.png')";
     div_affichage.style.paddingTop = "30%"
     let presentation1 = document.createElement("p");
     presentation1.setAttribute("id", "paragraphe1")
