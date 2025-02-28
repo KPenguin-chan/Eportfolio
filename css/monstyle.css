@@ -46,3 +46,27 @@ nav a:hover{
     margin: 0px 20px;
     height: 1500px;
 }
+
+#principal{
+    position: relative;
+    background-image: url("../images/enveloppe.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    padding-top: 56%;
+
+}
+
+div button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: #b01b1b;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+}
