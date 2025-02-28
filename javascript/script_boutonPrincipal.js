@@ -2,17 +2,20 @@ window.onload = init;
 
 function affiche() {
     let div_affichage = document.getElementById("principal")
+    let bouton = document.getElementById("affiche_principal");
+    bouton.style.display = "none";
     div_affichage.style.backgroundImage =  "url('../images/julie.jpg')";
+    div_affichage.style.paddingTop = "30%"
     let presentation1 = document.createElement("p");
     presentation1.setAttribute("id", "paragraphe1")
-    presentation1.appendChild(document.createTextNode("Bonjour, je m'appelle Julie Leroy "));
-    let espace = document.createElement("br");
-    let presentation2 = document.createElement("p");
-    presentation2.setAttribute("id", "paragraphe2")
-    presentation2.appendChild(document.createTextNode("Je vous souhaite la bienvenue sur mon Eporfolio"));
+    presentation1.appendChild(document.createTextNode("Bonjour, je m'appelle Julie Leroy \n Je vous souhaite la bienvenue sur mon Eporfolio "));
+
+    presentation1.style.textAlign = "center"
+
+    presentation1.style.backgroundColor = "#a4ced5"
+
     div_affichage.appendChild(presentation1);
-    div_affichage.appendChild(espace);
-    div_affichage.appendChild(presentation2);
+
 }
 
 function init(){
