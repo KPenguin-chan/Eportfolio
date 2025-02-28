@@ -3,6 +3,8 @@ window.onload = init;
 function affiche() {
     let div_affichage = document.getElementById("principal")
     let bouton = document.getElementById("affiche_principal");
+    let bienvenue = document.getElementById("bienvenue")
+    bienvenue.style.display = "none"
     bouton.style.display = "none";
     div_affichage.style.backgroundImage =  "url('images/julie.png')";
     div_affichage.style.paddingTop = "30%"
