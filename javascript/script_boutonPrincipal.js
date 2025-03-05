@@ -7,7 +7,7 @@ function affiche() {
     bienvenue.style.display = "none"
     bouton.style.display = "none";
     div_affichage.style.backgroundImage =  "none";
-    div_affichage.style.paddingTop = "30%"
+    div_affichage.style.paddingTop = "0%"
     let img = document.createElement("img");
     img.src = "./images/julie.png";
     img.style.width = "50%";
@@ -29,6 +29,8 @@ function affiche() {
     presentation.style.textAlign = "center"
 
     presentation.style.backgroundColor = "#a4ced5"
+    presentation.style.width = "70%"
+    presentation.style.borderRadius = "10px"
     presentation.appendChild(elm1)
     presentation.appendChild(elm2)
     presentation.appendChild(elm5)
@@ -37,6 +39,7 @@ function affiche() {
     presentation.appendChild(elm6)
     div_affichage.appendChild(img);
     div_affichage.appendChild(presentation);
+    div_affichage.style.alignContent = "center"
 
 }
 
