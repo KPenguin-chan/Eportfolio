@@ -43,7 +43,23 @@ function affiche() {
 
 }
 
+function vers_gauche(){
+
+    let element = document.getElementsByClassName("element")
+
+    for (let i = 0; i < element.length; i++) {
+        if(element[i].id){
+
+        }
+    }
+
+}
+
 function init(){
     let bouton = document.getElementById("affiche_principal");
+    let bGauche = document.getElementById("bGauche");
+    let bDroite = document.getElementById("bDroite");
+
+    bGauche.onclick = vers_gauche;
     bouton.onclick = affiche;
 }
