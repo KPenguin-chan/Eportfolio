@@ -6,8 +6,12 @@ function affiche() {
     let bienvenue = document.getElementById("bienvenue")
     bienvenue.style.display = "none"
     bouton.style.display = "none";
-    div_affichage.style.backgroundImage =  "url('images/julie.png')";
+    div_affichage.style.backgroundImage =  "none";
     div_affichage.style.paddingTop = "30%"
+    let img = document.createElement("img");
+    img.src = "./images/julie.png";
+    img.style.width = "50%";
+
     let presentation = document.createElement("ul");
     let elm1 = document.createElement("li")
     let elm2 = document.createElement("li")
@@ -31,6 +35,7 @@ function affiche() {
     presentation.appendChild(elm3)
     presentation.appendChild(elm4)
     presentation.appendChild(elm6)
+    div_affichage.appendChild(img);
     div_affichage.appendChild(presentation);
 
 }
