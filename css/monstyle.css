@@ -89,10 +89,46 @@ div #affiche_principal {
     margin-top: 50px;
 }
 
-#formation{
-    padding: 50px;
-    width: 50%;
+#conteneur {
+    display: grid;
+    place-items: center; /* Centre horizontalement et verticalement */
+    height: 100vh;
+}
+#carrousel_formation {
+    text-align: center;
+    width: 800px;
+    height: 600px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 8px 8px 0 #aaa;
     border-radius: 10px;
-    border: solid 1px black;
-    box-shadow: 8px 8px 0px #aaa;
+}
+
+
+
+
+.control {
+    position: absolute;
+    /* Les boutons sont absolument positionnés */
+    z-index: 5;
+    /* Ils sont placés au-dessus des autres éléments */
+    left: 25%;
+    /* La distance à gauche est de 10% */
+    right: 25%;
+    /* La distance à droite est de 10% */
+    top: 75%;
+    /* La distance du haut est de 50% */
+    display: flex;
+    /* Affiche les boutons en ligne */
+    justify-content: space-between;
+    /* Espacement égal entre les boutons */
+}
+/* Style des boutons de contrôle */
+.control button {
+    padding: 10px;
+    /* Ajout de padding pour un meilleur contrôle */
+    background-color: aquamarine;
+    /* Arrière-plan en aquamarine */
 }

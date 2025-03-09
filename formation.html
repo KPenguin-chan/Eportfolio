@@ -4,23 +4,34 @@
     <meta charset="UTF-8">
     <title>formation</title>
     <link rel = "stylesheet" href="css/monstyle.css?v=1.1">
-    <script src="javascript/script_boutonPrincipal.js?v=1.1"></script>
+    <script src="javascript/script_formation.js"></script>
 </head>
 <body>
 <div id="navbar"></div>
-<script src="javascript/script_barnav.js?v=1.1"></script>
-<div id = "formation">
-  <button id="bGauche"> >  </button>
- <div class = "element" id ="elm1">
-   <h1>Voici mes formations entre 2020 et 2026</h1>
- </div>
+<script src="javascript/script_barnav.js"></script>
+<!-- conteneur-->
+<div id ="conteneur">
+    <div id = "carrousel_formation">
 
-  <div hidden class = "element" id ="elm2">
-      <img src = "images/EMB.jpg" alt="photo lycée Emilie de Breteuil">
-      <p> Baccalauréat Général Spécialité NSI et Mathématiques</p>
-      <p> Mention Bien </p>
-  </div>
-  <button id ="bDroite"> <  </button>
+        <div id = "carrousel_int">
+            <div class = "element" id ="1">
+                <h1>Voici mes formations entre 2020 et 2026</h1>
+            </div>
+        </div>
+        <div id ="carrousel_ext" hidden="hidden">
+            <div  class = "element" id ="2">
+                <img src = "images/EMB.jpg" alt="photo lycée Emilie de Breteuil">
+                <p> Baccalauréat Général Spécialité NSI et Mathématiques</p>
+                <p> Mention Bien </p>
+            </div>
+        </div>
+    </div>
+    <div class="control">
+
+        <button id ="bDroite"> <  </button>
+        <button id="bGauche"> >  </button>
+
+    </div>
 </div>
 </body>
 </html>
