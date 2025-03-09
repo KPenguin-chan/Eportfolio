@@ -43,6 +43,7 @@ nav a:hover{
 
 
 #principal{
+    margin-top: 20px;
     position: relative;
     background-image: url("../images/enveloppe.png");
     background-size: contain;
@@ -50,8 +51,9 @@ nav a:hover{
     background-position: center;
     width: 100%;
     padding-top: 56%;
-
+    display: flex;
 }
+
 
 div #affiche_principal {
     position: absolute;
@@ -85,6 +87,7 @@ div #affiche_principal {
 
 /* Centrage du conteneur */
 #conteneur {
+    margin-top: 50px;
     display: grid;
     place-items: center; /* Centre horizontalement et verticalement */
     height: 100vh;

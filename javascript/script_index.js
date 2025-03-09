@@ -1,7 +1,7 @@
 window.onload = init;
 
 function affiche() {
-    console.log("aff")
+
     let div_affichage = document.getElementById("principal");
     let bouton = document.getElementById("affiche_principal");
     let bienvenue = document.getElementById("bienvenue");
@@ -13,13 +13,15 @@ function affiche() {
 
     let img = document.createElement("img");
     img.src = "./images/julie.png";
-    img.style.width = "50%";
-
+    img.style.width = "25%";
+    img.style.maxHeight ="25%"
     let presentation = document.createElement("ul");
     presentation.style.listStyle = "none";
     presentation.style.textAlign = "center";
     presentation.style.backgroundColor = "#a4ced5";
-    presentation.style.width = "70%";
+    presentation.style.width = "40%";
+    presentation.style.maxHeight  = "130px";
+    presentation.style.marginTop = "100px"
     presentation.style.borderRadius = "10px";
 
     let infos = [
@@ -36,6 +38,7 @@ function affiche() {
         li.textContent = text;
         presentation.appendChild(li);
     });
+
 
     div_affichage.appendChild(img);
     div_affichage.appendChild(presentation);
