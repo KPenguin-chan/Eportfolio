@@ -60,6 +60,7 @@ function init(){
     let bGauche = document.getElementById("bGauche");
     let bDroite = document.getElementById("bDroite");
 
-    bGauche.onclick = vers_gauche;
     bouton.onclick = affiche;
+    bGauche.onclick = vers_gauche;
+
 }
