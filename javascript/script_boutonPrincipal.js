@@ -6,8 +6,12 @@ function affiche() {
     let bienvenue = document.getElementById("bienvenue")
     bienvenue.style.display = "none"
     bouton.style.display = "none";
-    div_affichage.style.backgroundImage =  "url('images/julie.png')";
-    div_affichage.style.paddingTop = "30%"
+    div_affichage.style.backgroundImage =  "none";
+    div_affichage.style.paddingTop = "0%"
+    let img = document.createElement("img");
+    img.src = "./images/julie.png";
+    img.style.width = "50%";
+
     let presentation = document.createElement("ul");
     let elm1 = document.createElement("li")
     let elm2 = document.createElement("li")
@@ -25,17 +29,37 @@ function affiche() {
     presentation.style.textAlign = "center"
 
     presentation.style.backgroundColor = "#a4ced5"
+    presentation.style.width = "70%"
+    presentation.style.borderRadius = "10px"
     presentation.appendChild(elm1)
     presentation.appendChild(elm2)
     presentation.appendChild(elm5)
     presentation.appendChild(elm3)
     presentation.appendChild(elm4)
     presentation.appendChild(elm6)
+    div_affichage.appendChild(img);
     div_affichage.appendChild(presentation);
+    div_affichage.style.alignContent = "center"
+
+}
+
+function vers_gauche(){
+
+    let element = document.getElementsByClassName("element")
+
+    for (let i = 0; i < element.length; i++) {
+        if(element[i].id){
+
+        }
+    }
 
 }
 
 function init(){
     let bouton = document.getElementById("affiche_principal");
+    let bGauche = document.getElementById("bGauche");
+    let bDroite = document.getElementById("bDroite");
+
+    bGauche.onclick = vers_gauche;
     bouton.onclick = affiche;
 }
