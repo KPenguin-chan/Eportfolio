@@ -4,12 +4,19 @@
     font-family: "Times New Roman", serif
 }
 
+h1{
+    color: #0276b4;
+}
+
+hr{ color: #0276b4;}
+
+div {margin-top: 10px}
 nav {
 
     background: linear-gradient(#e8ecd0, #d8e6cf, #c9ded2, #a4ced5);;
     width: 100%;
     position: sticky;
-    top: 0px;
+    top: 0;
 }
 
 nav ul{
@@ -179,4 +186,21 @@ div #affiche_principal {
     background-color: #5fd8be;
 }
 
+#presentation_a_propos{
+    display: flex;
+}
+#contenu_a_propos {
+    text-align: center;
+    background-color: #a4ced5;
+    width: 40%;
+    max-height: 130px;
+    margin-top: 100px;
+    border-radius: 10px;
+    list-style: none;
+}
 
+#julie{
+    width: 25%;
+    max-height: 25%;
+    display: flex;
+}
