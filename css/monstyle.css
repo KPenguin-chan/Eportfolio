@@ -1,7 +1,12 @@
 *{
-    margin: 0;
     padding: 0;
-    font-family: "Times New Roman", serif
+    font-family: "Times New Roman", serif;
+    margin: 0;
+}
+
+
+.contenu, #competences{
+    margin :10px;
 }
 
 h1{
@@ -11,12 +16,17 @@ h1{
 hr{ color: #0276b4;}
 
 div {margin-top: 10px}
-nav {
+#navbar {
 
     background: linear-gradient(#e8ecd0, #d8e6cf, #c9ded2, #a4ced5);;
     width: 100%;
     position: sticky;
     top: 0;
+}
+
+#navbar h1 {
+    text-align: center;
+    color: #fffafa;
 }
 
 nav ul{
@@ -40,7 +50,7 @@ nav a{
     display: block;
     text-decoration: none;
     color: #fffafa;
-    padding: 10px 0;
+    padding: 25px 0;
 }
 
 nav a:hover{
@@ -82,7 +92,7 @@ div #affiche_principal {
 }
 
 #logo {
-    margin-top: -50px;
+    margin-top: -65px;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -188,6 +198,7 @@ div #affiche_principal {
 
 #presentation_a_propos{
     display: flex;
+    margin: 10px;
 }
 #contenu_a_propos {
     text-align: center;
@@ -203,4 +214,24 @@ div #affiche_principal {
     width: 25%;
     max-height: 25%;
     display: flex;
+}
+
+#compinformatique {
+    display: grid;
+}
+
+.competence{
+    display:flex;
+
+}
+
+
+.competence img, .outil img {
+    width: 120px;
+    max-height: 110px;
+    padding: 50px;
+}
+.outil{
+    display:flex;
+
 }
