@@ -228,10 +228,17 @@ div #affiche_principal {
 
 .competence img, .outil img {
     width: 120px;
-    max-height: 110px;
+    max-height: 130px;
     padding: 50px;
 }
+
+#trop_petit {
+    width: 250px;
+    max-height: 200px;
+}
+
 .outil{
     display:flex;
 
 }
+
