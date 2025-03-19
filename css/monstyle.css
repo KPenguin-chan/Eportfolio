@@ -7,7 +7,7 @@
 
 .contenu, #projets{
 
-   padding: 100px;
+   padding: 80px;
 }
 
 #projets {
@@ -47,12 +47,21 @@ hr{ color: #d1f2ff;}
 
 div {margin-top: 10px}
 #navbar {
+    margin-top:0;
+}
+#navbar,footer {
 
     background: linear-gradient(#e8ecd0, #d8e6cf, #c9ded2, #a4ced5);;
     width: 100%;
-    position: static;
-    top: 0;
+    height: 20%;
+    position:static;
 
+
+}
+
+footer{
+    min-height: 100px;
+margin-bottom: -40px;
 }
 
 #navbar h1 {
@@ -318,6 +327,7 @@ nav a:hover{
 }
 
 .cv-button {
+    margin-top: 50px;
     display: inline-block;
     background-color: #0276b4;
     color: white;
@@ -332,10 +342,8 @@ nav a:hover{
     background-color: #025a91;
 }
 
-
-#histoire_interactive {
-    background-image: url("../images/interactive_principal.png");
-    padding: 20%;
+#histoire_interactive,#pokemon{
+    padding: 200px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -343,12 +351,23 @@ nav a:hover{
     color: white; /* Texte en blanc pour plus de contraste */
     font-weight: bold; /* Texte plus épais */
     text-align: center; /* Centrer le texte */
+}
+#histoire_interactive {
+    background-image: url("../images/interactive_principal.png");
+}
+
+
+#pokemon {
+    background-image: url("../images/pokemon.png");
 
 }
 
-#histoire_interactive:hover {
+
+#pokemon:hover,#histoire_interactive:hover {
     transform: scale(1.1);
+    font-size: 25px;
 }
+
 
 .passion-section {
     width: 60%;
@@ -385,3 +404,11 @@ nav a:hover{
     opacity: 1;
 }
 
+.l1{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.description{
+    margin-left: 30px;
+}
